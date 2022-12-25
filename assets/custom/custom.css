@@ -1,0 +1,193 @@
+.bg-login{
+	background: url('./../dist/img/bg-poltek.jpg') no-repeat center center fixed;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+.content-wrapper {
+	min-height: 85vh !important;
+}
+.error{
+	color: red;
+}
+.display_none{
+	display: none;
+}
+.div-textarea{
+	min-height: 100px;
+}
+#dt_table_length, .dt-buttons, #dt_table_filter {
+	display: none;
+}
+.dt-buttons{
+	left:28vw;
+}
+.dataTables_length {
+	/*top: 9vh;*/
+	position: absolute;
+}
+.dataTables_wrapper .dt-buttons {
+	float: none;
+	text-align: center;
+}
+.dt_table_wrapper, .dt-buttons{
+	text-align: center;
+}
+.dt-body-center{
+	text-align: center;
+}
+.btn-floating{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:30px;
+	right:40px;
+}
+.btn-floating:hover{
+	color: #fff;
+}
+.floating-icon{
+	margin-top:10px;
+}
+.btn-file {
+	position: relative;
+	overflow: hidden;
+}
+.btn-file input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+	font-size: 100px;
+	text-align: right;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	outline: none;
+	cursor: inherit;
+	display: block;
+}
+.loader-upload  {
+	height: 3px;
+	width: 100%;
+	margin-left: -0.5rem;
+	overflow: hidden;
+	display: none;
+	position: fixed;
+	z-index: 1;
+	top: 57px;
+}
+
+.loader-get{
+	height: 3px;
+	width: 100%;
+	margin-left: -0.5rem;
+	overflow: hidden;
+	visibility: hidden;
+	position: fixed;
+	z-index: 1;
+	top: 57px;
+}
+.loader-get .bar {
+	position: relative;
+	height: 3px;
+	width: 100%;
+	background-color: red;
+	animation-name: loader-animation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+@keyframes loader-animation {
+	0% {
+		left: -100%;
+	}
+	49% {
+		left: 100%;
+	}
+	50% {
+		left: 100%;
+	}
+	100% {
+		left: -100%;
+	}
+}
+@media(max-width: 570px) {
+	.imgDok{
+		display: none;
+	}
+}
+
+
+@keyframes loader-animation-modal {
+	0% {
+		left: -100%;
+	}
+	49% {
+		left: 100%;
+	}
+	50% {
+		left: 100%;
+	}
+	100% {
+		left: -100%;
+	}
+}
+.loader-modal {
+	height: 3px;
+	width: 100%;
+	overflow: hidden;
+	visibility: hidden;
+}
+.loader-modal .bar-modal {
+	position: relative;
+	height: 3px;
+	width: 100%;
+	background-color: red;
+	animation-name: loader-animation-modal;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+#pdf-canvas{
+	width: 100%;
+}
+.select2-container--default .select2-selection--single {
+	padding: 0.1rem 0.1rem;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+	background-color: #007bff !important;
+	border: 1px solid #006fe6 !important;
+}
+[data-toggle="collapse"]::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	content: "\f077";
+	float: right;
+	transition: all 0.5s;
+}
+[data-toggle="collapse"].collapsed::before {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.panel-title>a, .panel-title>a:active{
+	display:block;
+	color:#555;
+	font-size:16px;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	word-spacing:3px;
+	text-decoration:none;
+}
+/*------------------datatables------------------*/
+td.details-control {
+	background: url('./../plugins/DataTables/images/details_open.png') no-repeat center center;
+	cursor: pointer;
+}
+tr.details td.details-control {
+	background: url('./../plugins/DataTables/images/details_close.png') no-repeat center center;
+}
